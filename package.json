@@ -2,7 +2,7 @@
     "name": "crodic-crystal-fe-snippets",
     "displayName": "Crodic Crystal",
     "description": "Support All MERN Stack Developer",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "publisher": "crodiccrystal",
     "engines": {
         "vscode": "^1.85.0"
@@ -15,31 +15,27 @@
         "snippets": [
             {
                 "language": "javascript",
-                "path": "./snippets/snippets.code-snippets"
+                "path": "./snippets/react.code-snippets"
             },
             {
                 "language": "css",
-                "path": "./snippets/snippets.code-snippets"
-            },
-            {
-                "language": "html",
-                "path": "./snippets/snippets.code-snippets"
+                "path": "./snippets/css.code-snippets"
             },
             {
                 "language": "typescript",
-                "path": "./snippets/snippets.code-snippets"
+                "path": "./snippets/react.code-snippets"
             },
             {
                 "language": "javascriptreact",
-                "path": "./snippets/snippets.code-snippets"
+                "path": "./snippets/react.code-snippets"
             },
             {
                 "language": "typescriptreact",
-                "path": "./snippets/snippets.code-snippets"
+                "path": "./snippets/react.code-snippets"
             },
             {
                 "language": "scss",
-                "path": "./snippets/snippets.code-snippets"
+                "path": "./snippets/css.code-snippets"
             }
         ]
     }

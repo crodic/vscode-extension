@@ -1,0 +1,22 @@
+{
+    "căn giữa các phần tử": {
+        "prefix": "!fc",
+        "body": ["display: flex;", "justify-content: center;", "align-items: center;"],
+        "description": "căn giữa các phần tử"
+    },
+    "Bo Tròn Phần Tử": {
+        "prefix": "!ic",
+        "body": ["width: ${1:100%};", "height: ${1:100%};", "border-radius: 100rem;"],
+        "description": "Tạo Hình Tròn"
+    },
+    "Dấu Chấm Lửng": {
+        "prefix": "!ltext",
+        "body": [
+            "overflow: hidden;",
+            "display: -webkit-box;",
+            "-webkit-box-orient: vertical;",
+            "-webkit-line-clamp: ${1:1};"
+        ],
+        "description": "Giới Hạn Số Hàng Của Text Trong 1 Phần Tử"
+    }
+}
