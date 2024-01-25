@@ -22,20 +22,8 @@
             "    )",
             ");"
         ],
-        "description": "Tạo Store Zustand Với Thư Viện Immer"
-    },
-    "React Component": {
-        "prefix": "!rafc",
-        "body": [
-            "const ${1:Component} = () => {",
-            "    return <>",
-            "      ${1:Component}",
-            "    </>;",
-            "}",
-            "",
-            "export default ${1:Component};"
-        ],
-        "description": "React Component"
+        "description": "Tạo Store Zustand Với Thư Viện Immer",
+        "scope": "typescript,typescriptreact,javascript,javascriptreact"
     },
     "Mẫu Button 1: Animation Hover Scale Echo": {
         "prefix": "!tw-btn-1",
@@ -44,7 +32,8 @@
             "    ${1:Content}",
             "</button>"
         ],
-        "description": "Mẫu Button 1: Animation Hover Scale Echo"
+        "description": "Mẫu Button 1: Animation Hover Scale Echo",
+        "scope": "typescript,typescriptreact,javascript,javascriptreact"
     },
     "Bắt sự kiện click ra bên ngoài phần tử": {
         "prefix": "!useClickOutSide",
@@ -68,7 +57,8 @@
             "export default useClickOutSide;",
             ""
         ],
-        "description": "Bắt sự kiện click ra bên ngoài phần tử"
+        "description": "Bắt sự kiện click ra bên ngoài phần tử",
+        "scope": "typescript,typescriptreact,javascript,javascriptreact"
     },
     "Delay 1 sự kiện đến 1 khoản thời gian không hành động nhất định": {
         "prefix": "!useDebounce",
@@ -93,7 +83,8 @@
             "export default useDebounce;",
             ""
         ],
-        "description": "Delay 1 sự kiện đến 1 khoản thời gian không hành động nhất định"
+        "description": "Delay 1 sự kiện đến 1 khoản thời gian không hành động nhất định",
+        "scope": "typescript,typescriptreact,javascript,javascriptreact"
     },
     "Bắt sự kiện khi view thay đổi": {
         "prefix": "!useWindowSize",
@@ -131,7 +122,8 @@
             "export default useWindowSize;",
             ""
         ],
-        "description": "Bắt sự kiện khi view thay đổi"
+        "description": "Bắt sự kiện khi view thay đổi",
+        "scope": "typescript,typescriptreact,javascript,javascriptreact"
     },
     "useAuthAxios() hook": {
         "prefix": "!useAuthAxios",
@@ -184,7 +176,8 @@
             "export default useAuthAxios;",
             ""
         ],
-        "description": "useAuthAxios() hook"
+        "description": "useAuthAxios() hook",
+        "scope": "typescript,typescriptreact,javascript,javascriptreact"
     },
     "Custom Axios Interceptors": {
         "prefix": "!i-axios",
@@ -217,9 +210,10 @@
             "export default ${1:Axios};",
             ""
         ],
-        "description": "Custom Axios Interceptors"
+        "description": "Custom Axios Interceptors",
+        "scope": "typescript,typescriptreact,javascript,javascriptreact"
     },
-    "Persist Redux": {
+    "PersistRedux": {
         "prefix": "!rdux-p",
         "body": [
             "import sessionStorage from 'redux-persist/es/storage/session';",
@@ -231,7 +225,8 @@
             "    whiteList: [],",
             "};"
         ],
-        "description": "Persist Store Redux"
+        "description": "Persist Store Redux",
+        "scope": "typescript,typescriptreact,javascript,javascriptreact"
     },
     "RTK Query Middleware": {
         "prefix": "!rdux-midd",
@@ -249,7 +244,8 @@
             "};",
             ""
         ],
-        "description": "RTK Query Middleware"
+        "description": "RTK Query Middleware",
+        "scope": "typescript,typescriptreact,javascript,javascriptreact"
     },
     "Create Slice In Redux Toolkit": {
         "prefix": "!rdux-sl",
@@ -269,7 +265,8 @@
             "",
             ""
         ],
-        "description": "Create Slice In Redux Toolkit"
+        "description": "Create Slice In Redux Toolkit",
+        "scope": "typescript,typescriptreact,javascript,javascriptreact"
     },
     "Axios Base Query In RTK Query": {
         "prefix": "!rtk-axios",
@@ -296,7 +293,8 @@
             "export default axiosBaseQuery;",
             ""
         ],
-        "description": "Axios Base Query In RTK Query"
+        "description": "Axios Base Query In RTK Query",
+        "scope": "typescript,typescriptreact,javascript,javascriptreact"
     },
     "RTK Query Slice API": {
         "prefix": "!rtk-sl",
@@ -333,6 +331,29 @@
             "export const { } = ${1:name};",
             ""
         ],
-        "description": "RTK Query Slice API"
+        "description": "RTK Query Slice API",
+        "scope": "typescript,typescriptreact,javascript,javascriptreact"
+    },
+    "ReactArrowFunctionExportComponent": {
+        "key": "javascriptReactArrowFunctionExportComponent",
+        "prefix": "rafc",
+        "body": [
+            "const ${1:${TM_FILENAME_BASE}} = () => {",
+            "  return (",
+            "    <div>${1:first}</div>",
+            "  )",
+            "}",
+            "",
+            "export default ${1:${TM_FILENAME_BASE}}"
+        ],
+        "description": "Creates a React Arrow Function Component with ES7 module system and TypeScript interface",
+        "scope": "typescript,typescriptreact,javascript,javascriptreact"
+    },
+    "consoleLog": {
+        "key": "consoleLog",
+        "prefix": "clg",
+        "body": ["console.log(${1:first})"],
+        "description": "Displays a message in the console",
+        "scope": "typescript,typescriptreact,javascript,javascriptreact"
     }
 }
