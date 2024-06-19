@@ -1,46 +1,40 @@
 {
     "căn giữa các phần tử": {
-        "prefix": "!fc",
+        "prefix": "@fc",
         "body": ["display: flex;", "justify-content: center;", "align-items: center;"],
-        "description": "căn giữa các phần tử"
+        "description": "căn giữa các phần tử",
+        "scope": "css,scss,sass"
     },
     "Bo Tròn Phần Tử": {
-        "prefix": "!ic",
+        "prefix": "@ccss",
         "body": ["width: ${1:100%};", "height: ${1:100%};", "border-radius: 100rem;"],
-        "description": "Tạo Hình Tròn"
+        "description": "Tạo Hình Tròn",
+        "scope": "css,scss,sass"
     },
     "Dấu Chấm Lửng": {
-        "prefix": "!ltext",
+        "prefix": "@lineclamp",
         "body": [
             "overflow: hidden;",
             "display: -webkit-box;",
             "-webkit-box-orient: vertical;",
             "-webkit-line-clamp: ${1:1};"
         ],
-        "description": "Giới Hạn Số Hàng Của Text Trong 1 Phần Tử"
+        "description": "Giới Hạn Số Hàng Của Text Trong 1 Phần Tử",
+        "scope": "css,scss,sass"
     },
     "Lồng hình ảnh vào chữ": {
-        "prefix": "!text-img",
+        "prefix": "@txti",
         "body": [
             "background-image: url(\"${1:\"\"}\");",
             "    background-clip: text;",
             "    color: transparent;",
             "    background-color: white;"
         ],
-        "description": "Lồng hình ảnh vào chữ"
-    },
-    "CSS Change Mode": {
-        "prefix": "!css-mode",
-        "body": ["@media (prefers-color-scheme: dark) {", "    :root {", "        --primary: black;", "    }", "}"],
-        "description": "CSS Change Mode"
-    },
-    "CSS Hình Tròn": {
-        "prefix": "!css-circle",
-        "body": ["clip-path: circle(60%);"],
-        "description": "CSS Hình Tròn"
+        "description": "Lồng hình ảnh vào chữ",
+        "scope": "css,scss,sass"
     },
     "Reset CSS": {
-        "prefix": "!reset",
+        "prefix": "@rcss",
         "body": [
             "html {",
             "  line-height: 1.15; /* 1 */",
@@ -382,6 +376,7 @@
             "  display: none;",
             "}"
         ],
-        "description": "Reset CSS"
+        "description": "Reset CSS",
+        "scope": "css,scss,sass"
     }
 }

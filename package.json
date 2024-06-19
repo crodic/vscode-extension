@@ -1,13 +1,13 @@
 {
     "name": "crodic-crystal-fe-snippets",
-    "displayName": "Crodic Crystal",
+    "displayName": "Animazing Service: Developer",
     "description": "Support All MERN Stack Developer",
-    "version": "0.1.3",
-    "publisher": "crodiccrystal",
+    "version": "0.1.4",
+    "publisher": "Crodic Crystal",
     "engines": {
         "vscode": "^1.85.0"
     },
-    "icon": "came.png",
+    "icon": "logo.png",
     "categories": [
         "Snippets"
     ],
@@ -15,27 +15,35 @@
         "snippets": [
             {
                 "language": "javascript",
-                "path": "./snippets/react.code-snippets"
-            },
-            {
-                "language": "css",
-                "path": "./snippets/css.code-snippets"
-            },
-            {
-                "language": "typescript",
-                "path": "./snippets/react.code-snippets"
+                "path": "./snippets/v1-react.code-snippets"
             },
             {
                 "language": "javascriptreact",
-                "path": "./snippets/react.code-snippets"
+                "path": "./snippets/v1-react.code-snippets"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/v1-react.code-snippets"
             },
             {
                 "language": "typescriptreact",
-                "path": "./snippets/react.code-snippets"
+                "path": "./snippets/v1-react.code-snippets"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/v1-node.code-snippets"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/v1-node.code-snippets"
+            },
+            {
+                "language": "css",
+                "path": "./snippets/v1-css.code-snippets"
             },
             {
                 "language": "scss",
-                "path": "./snippets/css.code-snippets"
+                "path": "./snippets/v1-css.code-snippets"
             }
         ]
     }

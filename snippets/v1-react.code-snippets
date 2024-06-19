@@ -1,0 +1,176 @@
+{
+    "reactArrowFunctionExportComponent": {
+        "prefix": "@rafce",
+        "body": [
+            "const ${1:${TM_FILENAME_BASE}} = () => {",
+            "  return (",
+            "    <div>${1:first}</div>",
+            "  )",
+            "}",
+            "",
+            "export default ${1:${TM_FILENAME_BASE}}"
+        ],
+        "description": "Creates a React Arrow Function Component with ES7 module system",
+        "scope": "typescript,typescriptreact,javascript,javascriptreact"
+    },
+    "typescriptReactArrowFunctionExportComponent": {
+        "prefix": "@tsrafce",
+        "body": [
+            "interface I${1:${TM_FILENAME_BASE}}Props = {}",
+            "",
+            "const ${1:${TM_FILENAME_BASE}} = (props: I${1:${TM_FILENAME_BASE}}Props) => {",
+            "  return (",
+            "    <div>${1:first}</div>",
+            "  )",
+            "}",
+            "",
+            "export default ${1:${TM_FILENAME_BASE}}"
+        ],
+        "description": "Creates a React Arrow Function Component with ES7 module system and TypeScript interface",
+        "scope": "typescript,typescriptreact,javascript,javascriptreact"
+    },
+    "NextArrowFunctionExportClientComponent": {
+        "prefix": "@nafce",
+        "body": [
+            "'use client'",
+            "",
+            "const ${1:${TM_FILENAME_BASE}} = () => {",
+            "  return (",
+            "    <div>${1:first}</div>",
+            "  )",
+            "}",
+            "",
+            "export default ${1:${TM_FILENAME_BASE}}"
+        ],
+        "description": "Creates a Next Arrow Function Component with ES7 module system",
+        "scope": "typescript,typescriptreact,javascript,javascriptreact"
+    },
+    "randomImage": {
+        "prefix": "@rdi",
+        "body": ["https://source.unsplash.com/random"],
+        "description": "Generate random image url form unplash",
+        "scope": "typescript,typescriptreact,javascript,javascriptreact,html,css"
+    },
+    "useCallback": {
+        "prefix": "@useCallbackSnippet",
+        "body": ["useCallback(", "  () => {", "    ${1:first}", "  },", "  [${2:second}],", ")", ""],
+        "scope": "typescript,typescriptreact,javascript,javascriptreact"
+    },
+    "useContext": {
+        "prefix": "@useContextSnippet",
+        "body": ["const ${1:first} = useContext(${2:second})"],
+        "scope": "typescript,typescriptreact,javascript,javascriptreact"
+    },
+    "useEffect": {
+        "prefix": "@useEffectSnippet",
+        "body": [
+            "useEffect(() => {",
+            "  ${1:first}",
+            "",
+            "  return () => {",
+            "    ${2:second}",
+            "  }",
+            "}, [${3:third}])",
+            ""
+        ],
+        "scope": "typescript,typescriptreact,javascript,javascriptreact"
+    },
+    "useMemo": {
+        "prefix": "@useMemoSnippet",
+        "body": ["useMemo(() => ${1:first}, [${2:second}])"],
+        "scope": "typescript,typescriptreact,javascript,javascriptreact"
+    },
+    "useReducer": {
+        "prefix": "@useReducerSnippet",
+        "body": ["const [state, dispatch] = useReducer(${1:first}, ${2:second}, ${3:third})"],
+        "scope": "typescript,typescriptreact,javascript,javascriptreact"
+    },
+    "useRef": {
+        "prefix": "@useRefSnippet",
+        "body": ["const ${1:first} = useRef(${2:second})"],
+        "scope": "typescript,typescriptreact,javascript,javascriptreact"
+    },
+    "useState": {
+        "prefix": "@useStateSnippet",
+        "body": ["const [${1:first}, set${1/(.*)/${1:/capitalize}/}] = useState(${2:second})"],
+        "scope": "typescript,typescriptreact,javascript,javascriptreact"
+    },
+    "import": {
+        "prefix": "@imp",
+        "body": ["import ${2:second} from '${1:first}'"],
+        "scope": "typescript,typescriptreact,javascript,javascriptreact"
+    },
+    "importObject": {
+        "prefix": "@impo",
+        "body": ["import {${2:second}} from '${1:first}'"],
+        "scope": "typescript,typescriptreact,javascript,javascriptreact"
+    },
+    "Async Arrow Functional": {
+        "prefix": "@asaf",
+        "body": ["const ${1:first} = async () => {", "", "}"],
+        "description": "Async Arrow Functional",
+        "scope": "typescript,typescriptreact,javascript,javascriptreact"
+    },
+    "Arrow Functional": {
+        "prefix": "@arf",
+        "body": ["const ${1:first} = () => {", "", "}"],
+        "description": "Arrow Functional",
+        "scope": "typescript,typescriptreact,javascript,javascriptreact"
+    },
+    "Persist Store Zustand": {
+        "prefix": "@zustand",
+        "body": [
+            "import { create } from 'zustand';",
+            "import { immer } from 'zustand/middleware/immer';",
+            "import { persist, createJSONStorage } from 'zustand/middleware';",
+            "",
+            "export const ${1:${TM_FILENAME_BASE}} = create(",
+            "    persist(",
+            "        immer((set) => ({",
+            "            count: 0,",
+            "            updateCount: (number) =>",
+            "                set((state) => {",
+            "                    state.count = number;",
+            "                })",
+            "        })),",
+            "        {",
+            "            name: '${2:store}',",
+            "            storage: createJSONStorage(() => ${3:localStorage}),",
+            "        }",
+            "    )",
+            ");"
+        ],
+        "description": "Create Store Zustand with ImmerJS"
+    },
+    "Store Zustand": {
+        "prefix": "@zus",
+        "body": [
+            "import { create } from 'zustand'",
+            "import { immer } from 'zustand/middleware/immer'",
+            "",
+            "export const ${1:${TM_FILENAME_BASE}} = create(",
+            "  immer((set) => ({",
+            "    count: 0,",
+            "  })),",
+            ")"
+        ],
+        "description": "Store Zustand",
+        "scope": "typescript,typescriptreact,javascript,javascriptreact"
+    },
+    "reactFunctionMemoComponent": {
+        "prefix": "@rmc",
+        "body": [
+            "import { memo } from 'react'",
+            "",
+            "const ${1:${TM_FILENAME_BASE}} = memo(() => {",
+            "  return (",
+            "    <div>${1:first}</div>",
+            "  )",
+            "})",
+            "",
+            "export default ${1:${TM_FILENAME_BASE}}"
+        ],
+        "description": "Create a React Memo Function Component with ES7 module system",
+        "scope": "typescript,typescriptreact,javascript,javascriptreact"
+    }
+}
